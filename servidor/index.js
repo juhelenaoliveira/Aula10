@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const app = express();
 const PORT = 3001;
 
@@ -53,5 +53,5 @@ app.get('/alunos', (req, res) => {
 
 //Iniciando o servidor 
 app.listen(PORT, () => {
-    console.log('Servidor rodadndo em http://localhost:${PORT}');
+    console.log(`Servidor rodadndo em http://localhost:${PORT}`);
 });
